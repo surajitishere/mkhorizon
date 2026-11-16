@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mkhorizon"
+version = "0.1.0"
+description = "How far back can a discrete trait be reconstructed? Per-node information diagnostics for Mk ancestral-state reconstruction."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Surajit Mondal" }]
+requires-python = ">=3.10"
+keywords = [
+  "phylogenetics",
+  "ancestral state reconstruction",
+  "Mk model",
+  "comparative methods",
+  "mutual information",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.5"]
+
+[project.scripts]
+mkhorizon = "mkhorizon.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mkhorizon"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "NPY"]
+ignore = ["E501"]

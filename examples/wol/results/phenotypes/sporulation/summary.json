@@ -1,0 +1,89 @@
+{
+  "n_tips": 4251,
+  "states": [
+    "no",
+    "yes"
+  ],
+  "state_counts": {
+    "no": 3678,
+    "yes": 573
+  },
+  "model": "ARD",
+  "root_prior": "equal",
+  "root_prior_vector": [
+    0.5,
+    0.5
+  ],
+  "rate_matrix": [
+    [
+      -0.06619374825839505,
+      0.06619374825839505
+    ],
+    [
+      1.3187019759324992,
+      -1.3187019759324992
+    ]
+  ],
+  "loglik": -409.84845559328187,
+  "fits": [
+    {
+      "model": "ER",
+      "loglik": -482.85823060859434,
+      "n_params": 1,
+      "aic": 967.7164612171887,
+      "rates": [
+        0.2136251444260333
+      ],
+      "at_upper_bound": false,
+      "negligible_transitions": []
+    },
+    {
+      "model": "ARD",
+      "loglik": -409.84845559328187,
+      "n_params": 2,
+      "aic": 823.6969111865637,
+      "rates": [
+        0.06619374825839505,
+        1.3187019759324992
+      ],
+      "at_upper_bound": false,
+      "negligible_transitions": []
+    }
+  ],
+  "negligible_transitions": [],
+  "signal_half_life": 0.5005049610972745,
+  "mean_root_to_tip": 0.9739819340068454,
+  "saturation_index": 1.9459985608765014,
+  "saturated_loglik": -1680.8253271814988,
+  "loglik_gain_over_saturation": 1270.976871588217,
+  "rate_scale_interval": {
+    "low": 0.817583104911193,
+    "high": 1.208949585237629,
+    "bounded_below": true,
+    "bounded_above": true
+  },
+  "information": {
+    "n_reps": 400,
+    "root_normalised_information": 0.8389289577515363,
+    "root_information_bits": 0.8389289577515363,
+    "root_expected_accuracy": 0.9686377260530113,
+    "root_baseline_accuracy": 0.5,
+    "median_normalised_information": 0.9922875676911913,
+    "fraction_informative": 1.0,
+    "fraction_weak": 0.0,
+    "fraction_uninformative": 0.0
+  },
+  "horizon": {
+    "threshold": 0.5,
+    "status": "always_above",
+    "height": null,
+    "height_half_lives": null
+  },
+  "seed": 1,
+  "signal_test": {
+    "statistic": 1259.9794115298716,
+    "p_value": 0.005,
+    "n_perm": 199,
+    "null_max": -0.7257428457182868
+  }
+}

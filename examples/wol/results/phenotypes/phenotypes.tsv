@@ -1,0 +1,6 @@
+trait	n_tips	states	model	negligible_transitions	half_life	saturation_index	rate_interval_low	rate_interval_high	rate_bounded_above	signal_p	fraction_informative	ni_root	ni_crown_Bacteria	ni_crown_Archaea	map_root	map_crown_Bacteria	map_crown_Archaea	model_disagreement_root	model_disagreement_crown_Bacteria	model_disagreement_crown_Archaea
+gram_stain	5417	negative=3439/positive=1978	ARD		1.711	0.5671	0.8084	1.22	True	0.005	1	0.9641	0.9697	0.9886	negative (0.99)	negative (0.99)	negative (1.00)	0.01155	0.0119	0.001333
+sporulation	4251	no=3678/yes=573	ARD		0.5005	1.946	0.8176	1.209	True	0.005	1	0.8389	0.8587	0.8962	no (0.98)	no (0.99)	no (1.00)	0.02033	0.008864	0.00115
+motility	4108	motile=1813/nonmotile=2295	ARD		0.2834	3.424	0.8995	1.109	True	0.005	0.9917	0.4966	0.7977	0.5028	motile (0.86)	motile (0.96)	motile (0.71)	0.6288	0.6334	0.5946
+cell_shape	3777	coccus=806/rod=2971	ARD		0.58	1.679	0.8346	1.188	True	0.005	1	0.7976	0.8405	0.8778	coccus (0.77)	rod (0.58)	coccus (0.99)	0.461	0.2915	0.3183
+thermophily	3066	mesophile=2678/thermophile=388	ARD		0.5401	1.807	0.8159	1.214	True	0.005	1	0.8412	0.8829	0.9234	thermophile (1.00)	thermophile (1.00)	thermophile (1.00)	0.9846	0.9838	0.9851

@@ -1,0 +1,89 @@
+{
+  "n_tips": 4108,
+  "states": [
+    "motile",
+    "nonmotile"
+  ],
+  "state_counts": {
+    "motile": 1813,
+    "nonmotile": 2295
+  },
+  "model": "ARD",
+  "root_prior": "equal",
+  "root_prior_vector": [
+    0.5,
+    0.5
+  ],
+  "rate_matrix": [
+    [
+      -1.581987461480759,
+      1.581987461480759
+    ],
+    [
+      0.8637275942466631,
+      -0.8637275942466631
+    ]
+  ],
+  "loglik": -1336.65726222937,
+  "fits": [
+    {
+      "model": "ER",
+      "loglik": -1347.8583953250845,
+      "n_params": 1,
+      "aic": 2697.716790650169,
+      "rates": [
+        1.219937598151786
+      ],
+      "at_upper_bound": false,
+      "negligible_transitions": []
+    },
+    {
+      "model": "ARD",
+      "loglik": -1336.65726222937,
+      "n_params": 2,
+      "aic": 2677.31452445874,
+      "rates": [
+        1.581987461480759,
+        0.8637275942466631
+      ],
+      "at_upper_bound": false,
+      "negligible_transitions": []
+    }
+  ],
+  "negligible_transitions": [],
+  "signal_half_life": 0.283412893475354,
+  "mean_root_to_tip": 0.9705213601687196,
+  "saturation_index": 3.424407931014323,
+  "saturated_loglik": -2819.1063566432713,
+  "loglik_gain_over_saturation": 1482.4490944139013,
+  "rate_scale_interval": {
+    "low": 0.8994538661797254,
+    "high": 1.1093117343975554,
+    "bounded_below": true,
+    "bounded_above": true
+  },
+  "information": {
+    "n_reps": 400,
+    "root_normalised_information": 0.49664539905753646,
+    "root_information_bits": 0.49664539905753646,
+    "root_expected_accuracy": 0.85867699728758,
+    "root_baseline_accuracy": 0.5,
+    "median_normalised_information": 0.9473366544278028,
+    "fraction_informative": 0.9917214511809106,
+    "fraction_weak": 0.008278548819089359,
+    "fraction_uninformative": 0.0
+  },
+  "horizon": {
+    "threshold": 0.5,
+    "status": "crossed",
+    "height": 0.9304560558098065,
+    "height_half_lives": 3.2830406704510797
+  },
+  "seed": 1,
+  "signal_test": {
+    "statistic": 1478.3713702020448,
+    "p_value": 0.005,
+    "n_perm": 199,
+    "null_max": -79.97045397344209
+  }
+}

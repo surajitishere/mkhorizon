@@ -1,0 +1,14 @@
+random gene families: 400
+best model: {'ARD': 390, 'ER': 10}
+fitted model effectively forbids a transition: 15 (3.8%)
+saturation index, quartiles: 1.86 / 4.50 / 8.22
+
+node              informative     weak  uninformative  median NI  model-sensitive   informative AND model-robust
+root                    49.5%    32.5%          18.0%       0.50            50.5%                          23.8%
+crown Bacteria          73.2%    18.8%           8.0%       0.83            39.8%                          43.0%
+crown Archaea           49.8%    24.8%          25.5%       0.49            12.2%                          38.0%
+
+Spearman correlation, saturation index vs NI at crown Bacteria: -0.98
+crown Bacteria: posterior >= 0.9 for one state in 70.8% of families; in 35.7% of those the other model class moves it by > 0.5
+
+model-sensitive = |P(present) under ARD - under ER| > 0.5; model-robust = that gap <= 0.1
